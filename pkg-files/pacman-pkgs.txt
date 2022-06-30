@@ -97,6 +97,7 @@ unrar
 unzip
 virt-manager
 virt-viewer
+wayland
 which
 wine-gecko
 wine-mono

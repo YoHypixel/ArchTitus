@@ -1,6 +1,7 @@
 plasma-desktop
 sddm
 dolphin
+konsole
 --END OF MINIMAL INSTALL--
 ark
 audiocd-kio
@@ -19,7 +20,6 @@ kdeplasma-addons
 kgamma5
 kgpg
 kinfocenter
-konsole
 kscreen
 kvantum-qt5
 kwalletmanager

@@ -1,0 +1,8 @@
+sway
+alacritty
+ssdm
+nano
+zsh
+firefox
+--END OF MINIMAL INSTALL--
+thunar

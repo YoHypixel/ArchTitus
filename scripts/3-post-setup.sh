@@ -81,6 +81,11 @@ elif [[ "${DESKTOP_ENV}" == "openbox" ]]; then
     sed -i 's/#greeter-session=example.*/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
   fi
 
+elif [[ ${DESKTOP_ENV} == "sway" ]]; then
+  systemctl enable sddm.service
+  if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
+
+  fi
 else
   if [[ ! "${DESKTOP_ENV}" == "server"  ]]; then
   sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter

@@ -20,7 +20,7 @@ set_option() {
     if grep -Eq "^${1}.*" $CONFIG_FILE; then # check if option exists
         sed -i -e "/^${1}.*/d" $CONFIG_FILE # delete option if exists
     fi
-    echo "${1}=${2}" >>$CONFIG_FILE # add option
+    echo "${1}=${2}" >> $CONFIG_FILE # add option
 }
 # @description Renders a text based list of options that can be selected by the
 # user using up, down and enter keys and returns the chosen option.
@@ -296,7 +296,7 @@ aurhelper () {
 desktopenv () {
   # Let the user choose Desktop Enviroment from predefined list
   echo -ne "Please select your desired Desktop Enviroment:\n"
-  options=(gnome kde cinnamon xfce mate budgie lxde deepin openbox server)
+  options=(sway awesome gnome kde cinnamon xfce mate budgie lxde deepin openbox server)
   select_option $? 4 "${options[@]}"
   desktop_env=${options[$?]}
   set_option DESKTOP_ENV $desktop_env
